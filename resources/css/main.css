@@ -1,13 +1,17 @@
 /* Universal styling */
+* {
 
+}
 html {
   color: #484748;
   font-size: 16px;
   font-family: Helvetica;
+
 }
 
 body {
   border: 1px solid #7A7A7A;
+           /*how to set proper width*/
 }
 
 .container {
@@ -18,6 +22,7 @@ body {
 
 div {
   display: block;
+
 }
 
 /* header styling */
@@ -86,24 +91,28 @@ ul li {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 30rem;
+  /*height: 30rem;*/
   background-color: #B0B0B0;
 }
 
-.banner .image  {
+.image-top  {
   background-image: url(../../resources/media/capstone_colmar_assets/images/banner.jpg);
-  height: 26rem;
+  height: 460px;
+  width: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 32px 24px;
-  width: 60%;
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-left: 24px;
 }
 
 .headline h1 {
@@ -145,4 +154,109 @@ ul li {
 .btn_1:active, .btn_1:visited:active {
   color: #fff;
   background-color: #5995DA;
+}
+
+/* event content styling */
+.test{
+  width: 60%;
+
+}
+.test .event {      /*the entire middle section*/
+  display: flex;
+  flex-direction: column;
+
+  height: 50rem;
+  background-color: #eee;
+
+}
+
+/*.event-banner {
+
+  flex-direction: column;
+
+  height: 50rem;
+  background-color: #fff;
+  padding: 32px 24px 32px 24px;
+  border: 1px solid black;
+}*/
+
+.image-middle {
+  background-image: url(../../resources/media/capstone_colmar_assets/images/information-main.jpg);
+  height: 460px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 32px;
+  margin-left: 24px;
+
+
+  /* fix height  scaling*/
+
+}
+
+.event h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 32px 0;
+}
+
+.event p {
+  font-size: 1.2rem;
+  padding-bottom: 32px;
+}
+
+.event span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+/*.info {
+  height: 50rem;
+}*/
+
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin-left: 24px;
+
+}
+
+.info-item {
+  display: flex;
+
+  margin-top: 16px;
+}
+
+.info img {
+  margin: 16px;
+  width: 35%;
+  height: auto;
+
+}
+
+.upcoming {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 65%;
+  line-height: 1.75rem;
+}
+
+.upcoming h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.upcoming .more {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: 	#4EA8E2;
 }
