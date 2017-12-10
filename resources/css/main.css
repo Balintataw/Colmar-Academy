@@ -1,23 +1,10 @@
 /* Universal styling */
-* {
 
-}
-html {
+body {
+  margin: 0;
   color: #484748;
   font-size: 16px;
   font-family: Helvetica;
-
-}
-
-body {
-  border: 1px solid #7A7A7A;
-           /*how to set proper width*/
-}
-
-.container {
-  display: flex;
-  line-height: 1.2;
-  margin: 0 auto;
 }
 
 div {
@@ -84,27 +71,35 @@ ul li {
   font-weight: 550;
 }
 
-/* banner styling */
+/* main banner styling */
 
-.banner {
+.main {
+
+}
+
+.container-pic  {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  /*height: 30rem;*/
-  background-color: #B0B0B0;
+  padding-top: 32px;
 }
 
-.image-top  {
-  background-image: url(../../resources/media/capstone_colmar_assets/images/banner.jpg);
-  height: 460px;
+.background {
+  background-color: #B0B0B0;  /* light gray */
+}
+
+.image-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 32px;
-  margin-left: 24px;
-  margin-bottom: 32px;
+  height: auto;
+  padding: 0px 24px 32px 24px;
+
+
+}
+
+.image-banner img {
 
 }
 
@@ -157,95 +152,76 @@ ul li {
 }
 
 /* event content styling */
-.test{
-  width: 60%;
 
-}
-.test .event {      /*the entire middle section*/
+.banner-middle {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+   /* left side */
 
-  height: 50rem;
-  background-color: #eee;
-
+.test {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 60%;
+  margin: 32px 24px;
 }
 
-/*.event-banner {
-
-  flex-direction: column;
-
-  height: 50rem;
-  background-color: #fff;
-  padding: 32px 24px 32px 24px;
-  border: 1px solid black;
-}*/
-
-.image-middle {
-  background-image: url(../../resources/media/capstone_colmar_assets/images/information-main.jpg);
-  height: 460px;
+.image-middle img {
+  width: 100%;
+  height: auto;
   
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 32px;
-  margin-left: 24px;
-
-
-  /* fix height  scaling*/
 
 }
 
-.event h1 {
+.practice h1 {
   font-size: 2.5rem;
   font-weight: 900;
   padding: 32px 0;
 }
 
-.event p {
+.practice p {
   font-size: 1.2rem;
   padding-bottom: 32px;
 }
 
-.event span {
+.practice span {
   font-size: 0.9rem;
   font-weight: 600;
   padding-bottom: 16px;
 }
 
-/*.info {
-  height: 50rem;
-}*/
+   /* right side */
 
-
-
-.info {
+.banner-middle .info {
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 100%;
-  margin-left: 24px;
-
+  margin-top: 16px;
+  border: 1px solid black
 }
 
 .info-item {
   display: flex;
-
-  margin-top: 16px;
+  align-items: center;
+  border-left: 1px solid #B0B0B0;
 }
 
 .info img {
   margin: 16px;
   width: 35%;
   height: auto;
-
 }
 
+.info .upcoming {
+  width: 65%;
+}
 .upcoming {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-left: 1rem;
-  width: 65%;
+
   line-height: 1.75rem;
 }
 
