@@ -177,8 +177,6 @@ ul li {
 .image-middle img {
   width: 100%;
   height: auto;
-
-
 }
 
 .practice h1 {
@@ -203,16 +201,15 @@ ul li {
 .banner-middle .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   width: 40%;
-  margin-top: 16px;
+  padding-top: 16px;
   border-left: 1px solid #DADADA;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-
 }
 
 .info img {
@@ -230,7 +227,6 @@ ul li {
   justify-content: center;
   flex-direction: column;
   padding-left: 1rem;
-
   line-height: 1.75rem;
 }
 
@@ -252,4 +248,29 @@ ul li {
 
 .guest {
   background-color: #DADADA;
+}
+
+/* learning course content styling */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  background-color: #DADADA;
+}
+
+.learning .start {
+  display: flex;
+  justify-content: center;
+}
+
+.start h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 32px 0;
+}
+
+.learning .courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
