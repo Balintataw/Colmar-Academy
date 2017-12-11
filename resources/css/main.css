@@ -188,12 +188,14 @@ ul li {
 .practice p {
   font-size: 1.2rem;
   padding-bottom: 32px;
+  color: #787878;
+  line-height: 2rem;
 }
 
 .practice span {
   font-size: 0.9rem;
   font-weight: 600;
-  padding-bottom: 16px;
+
 }
 
    /* right side */
@@ -204,6 +206,7 @@ ul li {
 
   width: 40%;
   padding-top: 16px;
+  padding-bottom: 32px;
   border-left: 1px solid #DADADA;
 }
 
@@ -227,18 +230,26 @@ ul li {
   justify-content: center;
   flex-direction: column;
   padding-left: 1rem;
-  line-height: 1.75rem;
+
+
 }
 
 .upcoming h3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+.upcoming p {
+  font-size: 1.25rem;
+  color: #787878;
+  padding: 16px 0;
+  line-height: 2rem;
 }
 
 .upcoming .more {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 500;
   color: 	#4EA8E2;
 }
 
@@ -273,4 +284,33 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 32px;
+  
+}
+
+.course {
+  margin: 0 16px 16px 16px;
+  line-height: 2rem;
+  background-color: #FFF;
+}
+
+.course img {
+  height: auto;
+
+}
+
+.course h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+.course p {
+  font-size: 1.25rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  color: #787878;
 }
