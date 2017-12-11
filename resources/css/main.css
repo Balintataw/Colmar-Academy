@@ -285,7 +285,7 @@ ul li {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 32px;
-  
+
 }
 
 .course {
@@ -314,3 +314,74 @@ ul li {
   margin-left: 16px;
   color: #787878;
 }
+
+/*thesis content styling */
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-exhibit h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.thesis-left-right {
+  display: flex;
+}
+
+.thesis-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+
+.thesis-left-item {
+  display: block;
+  padding-left: 24px;
+}
+
+.video-wrapper {
+  width: 100%;
+
+}
+
+.reimagine {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.reimagine h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 24px 0;
+}
+.reimagine p {
+  font-size: 1.25rem;
+  color: #787878;
+
+}
+
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 24px;
+
+}
+
+.thesis-right-item {
+  display: flex;
+  padding: 24px;
+
+}
+
+.fisma {
+  background-color: #DADADA;
+}
+
+/* video styling */
