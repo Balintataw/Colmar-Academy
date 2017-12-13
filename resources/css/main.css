@@ -29,20 +29,17 @@ nav {
   align-items: center;
   height: 64px;
   margin: 0 24px;
-
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-
   font-weight: 500;
   font-size: 1.25rem;
 }
 
 .header-menu .menu {
   font-size: 1.2rem;
-
 }
 
 .header-logo img {
@@ -164,7 +161,6 @@ ul li {
   .container-pic {
     flex-direction: column;
     justify-content: center;
-
   }
 
   .image-banner {
@@ -175,7 +171,6 @@ ul li {
   .headline {
     width: 100%;
     text-align: center;
-
     margin: 16px 0px 32px 0px;
     padding: 0px;
   }
@@ -225,7 +220,6 @@ ul li {
   position: relative;
   width: 60%;
   margin: 32px 24px;
-  border: 1px solid black;
 }
 
 .image-middle img {
@@ -249,10 +243,12 @@ ul li {
 .practice span {
   font-size: 0.9rem;
   font-weight: 600;
-
 }
 
    /* right side */
+.banner-middle-mobile {
+  display: none;
+}
 
 .banner-middle-right {
   display: flex;
@@ -269,14 +265,14 @@ ul li {
 }
 
 .banner-middle-right img {
+  position: relative;
   margin: 16px;
   width: 35%;
   height: auto;
 }
 
 .banner-middle-right .upcoming {
-  width: 65%;
-  height: auto;
+  padding: 16px;
 }
 .upcoming {
   display: flex;
@@ -286,15 +282,15 @@ ul li {
 }
 
 .upcoming h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .upcoming p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #787878;
   padding: 16px 0;
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
 
 .upcoming .more {
@@ -312,14 +308,43 @@ ul li {
   background-color: #DADADA;
 }
 
+@media only screen and (max-width: 720px) {
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-middle-right img {
+    width: 50%;
+  }
+
+  .upcoming p {
+    line-height: 1rem;
+  }
+
+  .upcoming .more {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  .banner-middle-left {
+  .banner-middle-left, .banner-middle-right {
     display: none;
   }
 
-  .banner-middle-right {
+  .banner-middle-mobile {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 16px 0px 32px 0px;
+  }
+
+  .banner-middle-right {
     padding-top: 16px;
+  }
+
+  .info-item img {
+    padding: 16px;
   }
 }
 
@@ -350,13 +375,16 @@ ul li {
 }
 
 .course {
-  margin: 0 16px 16px 16px;
+  padding: 0 32px;
+  margin:
   line-height: 2rem;
   background-color: #FFF;
+  width: 25%;
 }
 
 .course img {
   height: auto;
+
 }
 
 .course h3 {
@@ -364,14 +392,14 @@ ul li {
   font-weight: 700;
   margin-top: 16px;
   margin-bottom: 8px;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 
 .course p {
   font-size: 1.25rem;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-left: 16px;
+  padding-left: 16px;
   color: #787878;
 }
 
