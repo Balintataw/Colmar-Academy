@@ -77,12 +77,20 @@ ul li {
 }
 
 @media only screen and (max-width: 750px) {
-  .menu-item a {
-    font-size: 1rem;
+  .header-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 64px;
+		padding: 0 42px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 480px) {
   .header-menu .menu, .header-logo {
     display: none;
   }
@@ -100,8 +108,10 @@ ul li {
 
 .container-pic  {
   display: flex;
-  flex-direction: row;
+
   align-items: center;
+
+
 }
 
 .background {
@@ -119,28 +129,69 @@ ul li {
 .image-banner img {
   width: 100%;
   height: auto;
+
 }
 
 .headline {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 40%;
+  height: auto;
+  line-height: 2rem;
+  padding: 32px 0px;
+
 }
 
 .headline h1 {
   font-size: 2rem;
   font-weight: 900;
-  padding-bottom: 2rem;
-  margin-right: 50px;
-  padding-right: 10px;
+  padding-bottom: 32px;
+
 }
 
 .headline p {
   font-size: 1.2rem;
   font-weight: 700;
-  padding-bottom: 2rem;
-  margin-right: 50px;
-  padding-right: 10px;
+  padding-bottom: 32px;
+
+
+}
+
+@media only screen and (max-width: 720px) {
+  .image-banner img {
+    min-height: 230px;
+  }
+
+  .headline p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-pic {
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .image-banner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .headline {
+    width: 100%;
+    text-align: center;
+
+    margin: 16px 0px 32px 0px;
+    padding: 0px;
+  }
+
+  .headline a {
+    margin: 0 auto;
+    padding: 12px 64px;
+  }
 }
 
   /* banner button styling */
