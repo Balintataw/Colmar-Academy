@@ -19,27 +19,34 @@ div {
 
   /* header content styling */
 
-header nav {
-  background-color: #fff;
-  width: 100%;
-  height: 64px;
-}
-
-nav {
+header {
   display: flex;
   justify-content: space-between;
 }
 
-nav div {
+nav {
   display: flex;
   align-items: center;
+  height: 64px;
+  margin: 0 24px;
+
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 1.25rem;
 }
 
-nav img {
-  height: 40px;
-  margin-left: 24px;
+.header-menu .menu {
+  font-size: 1.2rem;
+
+}
+
+.header-logo img {
+  height: 45px;
 }
 
 nav span {
@@ -48,10 +55,6 @@ nav span {
 
 .logo .light {
   color: #A7A7A7;
-}
-
-ul {
-  margin-right: 16px;
 }
 
 ul li {
@@ -67,6 +70,30 @@ ul li {
 
 .menu-item a:hover, .menu-item a:visited:hover {
   color: #5995DA;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .menu-item a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header-menu .menu, .header-logo {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 64px;
+		padding: 0 42px;
+  }
 }
 
   /* main banner styling */
