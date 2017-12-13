@@ -108,10 +108,7 @@ ul li {
 
 .container-pic  {
   display: flex;
-
   align-items: center;
-
-
 }
 
 .background {
@@ -129,7 +126,6 @@ ul li {
 .image-banner img {
   width: 100%;
   height: auto;
-
 }
 
 .headline {
@@ -140,22 +136,18 @@ ul li {
   height: auto;
   line-height: 2rem;
   padding: 32px 0px;
-
 }
 
 .headline h1 {
   font-size: 2rem;
   font-weight: 900;
   padding-bottom: 32px;
-
 }
 
 .headline p {
   font-size: 1.2rem;
   font-weight: 700;
   padding-bottom: 32px;
-
-
 }
 
 @media only screen and (max-width: 720px) {
@@ -227,12 +219,13 @@ ul li {
 }
    /* left side */
 
-.test {
+.banner-middle-left {
   display: block;
   height: auto;
   position: relative;
   width: 60%;
   margin: 32px 24px;
+  border: 1px solid black;
 }
 
 .image-middle img {
@@ -261,7 +254,7 @@ ul li {
 
    /* right side */
 
-.banner-middle .info {
+.banner-middle-right {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -275,13 +268,13 @@ ul li {
   align-items: center;
 }
 
-.info img {
+.banner-middle-right img {
   margin: 16px;
   width: 35%;
   height: auto;
 }
 
-.info .upcoming {
+.banner-middle-right .upcoming {
   width: 65%;
   height: auto;
 }
@@ -317,6 +310,17 @@ ul li {
 
 .guest {
   background-color: #DADADA;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner-middle-left {
+    display: none;
+  }
+
+  .banner-middle-right {
+    width: 100%;
+    padding-top: 16px;
+  }
 }
 
   /* learning course content styling */
