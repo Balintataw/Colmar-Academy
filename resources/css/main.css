@@ -136,20 +136,50 @@ ul li {
 }
 
 .headline h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 900;
-  padding-bottom: 32px;
+  line-height: 5rem;
+  padding-bottom: 76px;
 }
 
 .headline p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
-  padding-bottom: 32px;
+  line-height: 3rem;
+  padding-bottom: 64px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1440px) {
+  .headline h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-bottom: 32px;
+  }
+
+  .headline p {
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .headline h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    padding-bottom: 32px;
+  }
+
+  .headline p {
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 835px) {
   .image-banner img {
     min-height: 230px;
+  }
+
+  .headline h1 {
+    font-size: 2rem;
   }
 
   .headline p {
@@ -173,6 +203,12 @@ ul li {
     text-align: center;
     margin: 16px 0px 32px 0px;
     padding: 0px;
+  }
+
+  .headline h1 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height:2.5rem;
   }
 
   .headline a {
@@ -296,6 +332,10 @@ ul li {
   font-size: 1.25rem;
   font-weight: 500;
   color: 	#4EA8E2;
+}
+
+.upcoming .more:hover, .upcoming .more:active:visited {
+  color: black;
 }
 
 .orientation {
@@ -509,7 +549,6 @@ ul li {
 
 .now {
   border-bottom: 1px solid #DADADA;
-  
 }
 
 @media only screen and (max-width: 720px) {
