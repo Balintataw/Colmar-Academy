@@ -507,6 +507,11 @@ ul li {
   background-color: #DADADA;
 }
 
+.now {
+  border-bottom: 1px solid #DADADA;
+  
+}
+
 @media only screen and (max-width: 720px) {
   .thesis-right-item {
     flex-direction: column;
@@ -528,11 +533,14 @@ ul li {
 
   .thesis-left {
     width: 100%;
-
   }
 
   .thesis-left-item {
     padding: 0;
+  }
+
+  .course-mobile a:hover, .course-mobile a:visited:active {
+    color: #76AEED;
   }
 }
 
