@@ -568,12 +568,12 @@ ul li {
   .thesis-right-item {
     flex-direction: column;
     text-align: center;
-    padding: 24px 24px 0px 24px;
+    padding: 24px 0 0 0;
   }
 
   .thesis-right-item img {
-    width: 100%;
-    max-height: 170px;
+    width: 80%;
+
   }
 
   .upcoming h3, .upcoming p {
@@ -582,7 +582,6 @@ ul li {
     padding-bottom: 0;
   }
 }
-
 
 @media only screen and (max-width: 480px) {
   .reimagine, .thesis-right {
