@@ -251,9 +251,9 @@ ul li {
   margin: 8px 50px 0 0;
   padding: 8px 10px;
   border-radius: 2px;
-  -webkit-box-shadow: 5px 5px 2px #A7A7A7;
-     -moz-box-shadow: 5px 5px 2px #A7A7A7;
-          box-shadow: 5px 5px 2px #A7A7A7;
+  -webkit-box-shadow: 4px 4px 2px #A7A7A7;
+     -moz-box-shadow: 4px 4px 2px #A7A7A7;
+          box-shadow: 4px 4px 2px #A7A7A7;
 }
 
 .btn_1:focus, .btn_1:visited:focus {
