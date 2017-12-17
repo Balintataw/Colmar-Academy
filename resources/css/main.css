@@ -1,8 +1,17 @@
+/*  ---colors---
+   dark gray: #484748
+   medium gray: #A7A7A7
+   light gray: #DADADA
+   gray/red: #8E8A8A
+   light blue: #76AEED
+   dark blue: #5995DA
+*/
+
 /* Universal styling */
 
 body {
   margin: 0;
-  color: #484748;  /* dark gray */
+  color: #484748;
   font-size: 16px;
   font-family: Helvetica;
 }
@@ -12,7 +21,7 @@ div {
 }
 
 .main {
-  border-right: 2px solid #A7A7A7;   /* medium gray */
+  border-right: 2px solid #A7A7A7;
   border-bottom: 2px solid #A7A7A7;
   border-left: 2px solid #A7A7A7;
 }
@@ -67,7 +76,7 @@ ul li {
 }
 
 .menu-item a:hover, .menu-item a:visited:hover {
-  color: #5995DA;
+  color: #76AEED;
 }
 
 .mobile-menu {
@@ -117,7 +126,7 @@ ul li {
 }
 
 .background {
-  background-color: #DADADA;  /* light gray */
+  background-color: #DADADA;
 }
 
 .image-banner {
@@ -155,6 +164,7 @@ ul li {
   font-weight: 700;
   line-height: 3rem;
   padding-bottom: 64px;
+  color: #8e8a8a;            /* color only used here */
 }
 
 @media only screen and (max-width: 1440px) {
@@ -178,6 +188,7 @@ ul li {
 
   .headline p {
     padding-bottom: 32px;
+    line-height: 2rem;
   }
 }
 
@@ -247,7 +258,7 @@ ul li {
 
 .btn_1:active, .btn_1:visited:active {
   color: #fff;
-  background-color: #5995DA;
+  background-color: #5995DA;          /* color only used here */
 }
 
   /*------------event content styling-----------*/
@@ -340,11 +351,11 @@ ul li {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 500;
-  color: 	#4EA8E2;
+  color: 	#76AEED;
 }
 
 .upcoming .more:hover, .upcoming .more:active:visited {
-  color: black;
+  color: #484748;
 }
 
 .orientation {
