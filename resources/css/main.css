@@ -251,6 +251,17 @@ ul li {
   margin: 8px 50px 0 0;
   padding: 8px 10px;
   border-radius: 2px;
+  -webkit-box-shadow: 5px 5px 2px #A7A7A7;
+     -moz-box-shadow: 5px 5px 2px #A7A7A7;
+          box-shadow: 5px 5px 2px #A7A7A7;
+}
+
+.btn_1:focus, .btn_1:visited:focus {
+  color: #fff;
+  background-color: #5995DA;
+  -webkit-box-shadow: inset 1px 1px 6px #484748;
+     -moz-box-shadow: inset 1px 1px 6px #484748;
+          box-shadow: inset 1px 1px 6px #484748;
 }
 
 .btn_1:hover, .btn_1:visited:hover {
