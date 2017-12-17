@@ -431,7 +431,8 @@ ul li {
   }
 
   .info-item img {
-    padding: 16px;
+    padding: 16px 0px;
+    width: 100%;
   }
 
   .upcoming .middle-banner-h3 {
