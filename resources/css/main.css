@@ -474,12 +474,16 @@ ul li {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px 0px 32px 0px;
+
 }
 
 .course {
+  width: 480px;
+  min-width: 300px;
   margin: 0 8px 16px 8px;
   line-height: 2rem;
   background-color: #FFF;
+  border: 1px solid black;
 }
 
 .course img {
@@ -500,7 +504,40 @@ ul li {
   margin-top: 8px;
   margin-bottom: 8px;
   padding-left: 16px;
+  padding-right: 8px;
   color: #787878;
+}
+
+.course-p-1 {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1600px) {
+  .course {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  .course {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .course {
+    width: 270px;
+  }
+
+  .course p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .course {
+    width: 450px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
