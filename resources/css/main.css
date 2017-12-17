@@ -44,6 +44,7 @@ nav {
 
 .header-logo img {
   height: 45px;
+  padding-left: 24px;
 }
 
 nav span {
@@ -56,7 +57,7 @@ nav span {
 
 ul li {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 7px;
 }
 
 .menu-item a {
@@ -83,7 +84,13 @@ ul li {
 		justify-content: space-between;
 		width: 100%;
 		height: 64px;
-		padding: 0 42px;
+		padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .mobile-menu-item {
+    justify-content: space-between;
+    padding: 0 4px;
   }
 }
 
@@ -94,6 +101,7 @@ ul li {
 
   .mobile-menu {
   	justify-content: center;
+    padding: 0;
   }
 
   .mobile-menu-item {
@@ -453,6 +461,10 @@ ul li {
     display: none;
   }
 
+  .start h1 {
+    text-align: center;
+  }
+
   .courses-mobile {
     display: flex;
     flex-direction: column;
@@ -522,6 +534,7 @@ ul li {
 .reimagine p {
   font-size: 1.25rem;
   color: #787878;
+  line-height: 2rem;
 }
 
 .thesis-right {
@@ -560,7 +573,13 @@ ul li {
 
   .thesis-right-item img {
     width: 100%;
-    height: 180px;
+    max-height: 170px;
+  }
+
+  .upcoming h3, .upcoming p {
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+    padding-bottom: 0;
   }
 }
 
@@ -592,7 +611,7 @@ footer {
   padding: 32px 24px 32px 24px;
   margin-top: 16px 0;
   font-size: 1.15rem;
-  color: #787878;
+  color: #484748;
 }
 
 .site-info a {
@@ -603,6 +622,17 @@ footer {
 
 .site-info a:hover, .site-info a:visited:hover {
   color: #5995DA;
+}
+
+@media only screen and (max-width: 720px) {
+  footer {
+    font-size: 1rem;
+    padding: 32px 12px 32px 12px;
+  }
+
+  .site-info a {
+    padding-left: 8px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
