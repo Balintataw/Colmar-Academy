@@ -373,7 +373,7 @@ ul li {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 500;
-  color: 	#76AEED;
+  color: #76AEED;
 }
 
 .upcoming .more:hover, .upcoming .more:active:visited {
@@ -440,6 +440,10 @@ ul li {
     padding-bottom: 16px;
   }
 
+  .banner-right-p-mobile {
+    color: #787878;
+  }
+
   .upcoming .more {
     padding-top: 16px;
     padding-bottom: 0px;
@@ -483,7 +487,6 @@ ul li {
   margin: 0 8px 16px 8px;
   line-height: 2rem;
   background-color: #FFF;
-  border: 1px solid black;
 }
 
 .course img {
